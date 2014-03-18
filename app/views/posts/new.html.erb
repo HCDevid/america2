@@ -5,6 +5,16 @@
       <h1> New Posts </h1>
       <p> Well, let's see what this post is suppossed to look like </p>
       <%= form_for :post, url: posts_path do |f| %>
+        <% if @post.errors.any? %>
+          <div id = "error_explanation">
+            <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved </h2>
+            <ul>
+              <% @post.errors.full_messages.each do |e| %>
+                <li> <%= e %> </li>
+              <%end%>
+            </ul>
+          </div>
+        <% end %>
         <p>
           <%= f.label :title %><br>
           <%= f.text_area :title %> <br>
