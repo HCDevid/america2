@@ -1,0 +1,17 @@
+<% provide(:title, "All Posts") %>
+<h1> All Posts </h1>
+<%= link_to "New Post", new_post_path %>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Price</th>
+    <th>Description</th>
+  </tr>
+<% @posts.each do |o| %>
+  <tr>
+    <td><%= o.title %></td>
+    <td><%= o.price %></td>
+    <td><%= o.description %></td>
+  </tr>
+<% end %>
+</table>

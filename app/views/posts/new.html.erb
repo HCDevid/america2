@@ -1,0 +1,30 @@
+<% provide(:title, "Make a New Post") %>
+<div class = "container">
+  <div class = "row">
+    <div class = "span4">
+      <h1> New Posts </h1>
+      <p> Well, let's see what this post is suppossed to look like </p>
+      <%= form_for :post, url: posts_path do |f| %>
+        <p>
+          <%= f.label :title %><br>
+          <%= f.text_area :title %> <br>
+        </p>
+
+        <p>
+          <%= f.label :price %><br>
+          <%= f.text_area :price %> <br>
+        </p>
+
+        <p>
+          <%= f.label :description %> <br>
+          <%= f.text_area :description %> <br>
+        </p>
+
+        <p> 
+          <%=f.submit %>
+        </p>
+      <% end %>
+      <%= link_to "Back", posts_path %>
+    </div>
+  </div>
+</div>
