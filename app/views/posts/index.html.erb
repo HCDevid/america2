@@ -12,6 +12,9 @@
     <td><%= o.title %></td>
     <td><%= o.price %></td>
     <td><%= o.description %></td>
+    <td><%= link_to "Show", post_path(o) %> </td>
+    <td><%= link_to 'Edit', edit_post_path(o) %></td>
+    <td><%= link_to 'Delete', post_path(o), method: :delete, data: {confirm: 'Are you sure?'} %> </td>
   </tr>
 <% end %>
 </table>
