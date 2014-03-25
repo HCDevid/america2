@@ -1,4 +1,23 @@
 <% provide(:title, 'America\'s Home') %>
-<h1>Welcome to America</h1>
-<p>The Land of the Free, and the Home of the Brave</p>
-<%= link_to "My Posts", controller: "posts" %>
+
+  <div class = "jumbotron">
+    <div class = "container">
+        <h1>American Glory</h1>
+        <p class = "lead">The Land of the Free, and the Home of the Brave</p>
+        <!-- <div class = "row"> -->
+          <!-- <img src = "/assets/american-flag-eagle-wallpaper.jpg" class = "img-responsive"> -->
+    </div>
+  </div>
+
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-md-6 subheadings">
+        <h1><%= link_to "My Posts", controller: "posts" %></h1>
+        <p class = "lead">See the best America posts and comments!</p>
+      </div>
+      <div class = "col-md-6 subheadings">
+        <h1><%= link_to "Make a New Post", new_post_path %></h1>
+        <p class = "lead">Make an American post of your own!</p>
+      </div>
+    </div>
+  </div>

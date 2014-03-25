@@ -4,3 +4,27 @@
 .container-fluid {
   padding: 0 15px;
 }
+
+body {
+  background-color: #CCFFCC;
+}
+
+.jumbotron {
+  height: 400px;
+  background-image: url(/assets/american-flag-eagle-wallpaper.jpg);
+  background-size: cover;
+}
+
+.jumbotron h1 {
+  color: white;
+}
+
+.jumbotron p {
+  color: white;
+}
+
+.subheadings {
+  background-color: white;
+  border-style: solid;
+  border-color: gray;
+}
