@@ -11,13 +11,14 @@
 
   <div class = "container">
     <div class = "row">
-      <div class = "col-md-6 subheadings">
-        <h1><%= link_to "My Posts", controller: "posts" %></h1>
-        <p class = "lead">See the best America posts and comments!</p>
+      <div class = "col-md-6">
+        <%= link_to "My Posts", posts_path, :class => "btn btn-primary btn-block" %>
+        <!-- <p class = "lead">See the best America posts and comments!</p> -->
       </div>
-      <div class = "col-md-6 subheadings">
-        <h1><%= link_to "Make a New Post", new_post_path %></h1>
-        <p class = "lead">Make an American post of your own!</p>
+
+      <div class = "col-md-6">
+        <%= link_to "Make a New Post", new_post_path, :class => "btn btn-danger btn-block"%>
       </div>
+
     </div>
   </div>

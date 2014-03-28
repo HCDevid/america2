@@ -6,11 +6,11 @@
 }
 
 body {
-  background-color: #CCFFCC;
+  // background-color: #CCFFCC;
 }
 
 .jumbotron {
-  height: 400px;
+  height: 500px;
   background-image: url(/assets/american-flag-eagle-wallpaper.jpg);
   background-size: cover;
 }
@@ -27,4 +27,8 @@ body {
   background-color: white;
   border-style: solid;
   border-color: gray;
+}
+
+.white {
+  color: white;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!-- Testing Internet -->
 <head>
   <title><%=yield(:title)%></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
@@ -20,9 +21,9 @@
   <!-- Collection of navlinks & else -->
   <div id = "navbarCollapse" class = "collapse navbar-collapse">
     <ul class = "nav navbar-nav">
-      <li><a href = "#">Home</a></li>
-      <li><a href = "#">Posts</a></li>
-      <li><a href = "#">Make a New Post</a></li>
+      <li><a href = "/">Home</a></li>
+      <li><a href = "/posts">Posts</a></li>
+      <li><a href = "/posts/new">Make a New Post</a></li>
     </ul>
   </div>
 </nav>
