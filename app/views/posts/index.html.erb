@@ -3,12 +3,14 @@
 <%= link_to "New Post", new_post_path %>
 <table>
   <tr>
+    <th>Image</th>
     <th>Title</th>
     <th>Price</th>
     <th>Description</th>
   </tr>
 <% @posts.each do |o| %>
   <tr>
+    <td><%= o.image %></td>
     <td><%= o.title %></td>
     <td><%= o.price %></td>
     <td><%= o.description %></td>
