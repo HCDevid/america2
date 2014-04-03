@@ -10,7 +10,7 @@
   </tr>
 <% @posts.each do |o| %>
   <tr>
-    <td><%= o.image %></td>
+    <td><%= image_tag o.image_url.to_s %></td>
     <td><%= o.title %></td>
     <td><%= o.price %></td>
     <td><%= o.description %></td>
