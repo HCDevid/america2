@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 1.2'
 
 # Use carrierwave for image uploading
 gem 'carrierwave'
+#Use rmagick for image processing
+gem 'rmagick'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
