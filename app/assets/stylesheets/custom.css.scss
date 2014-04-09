@@ -1,12 +1,17 @@
 @import "bootstrap";
 // @import "bootstrap-theme";
 
+table {
+  background-color: white;
+}
+
 .container-fluid {
   padding: 0 15px;
 }
 
 body {
   // background-color: #CCFFCC;
+  background-image: url(/assets/american-flag-eagle-wallpaper.jpg);
 }
 
 .jumbotron {
@@ -37,3 +42,8 @@ tr.header {
   background-color: lightblue;
   border: 0;
 }
+
+.profile {
+  max-width: 250px;
+}
+
