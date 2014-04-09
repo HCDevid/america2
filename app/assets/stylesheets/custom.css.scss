@@ -11,12 +11,13 @@ table {
 
 body {
   // background-color: #CCFFCC;
-  background-image: url(/assets/american-flag-eagle-wallpaper.jpg);
+  background-image: url(image_path("american-flag-eagle-wallpaper.jpg"));
 }
 
 .jumbotron {
   height: 500px;
-  background-image: url(/assets/american-flag-eagle-wallpaper.jpg);
+  // background-image: url(/assets/american-flag-eagle-wallpaper.jpg);
+  background-image: url(image_path("american-flag-eagle-wallpaper.jpg"));
   background-size: cover;
 }
 
